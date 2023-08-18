@@ -18,7 +18,7 @@
         <div class="flex-1">
           <h1 class="text-center normal-case text-xl">
             Interactive <br />
-            Geometry Genius
+            <span class="text-lg text-gray-500">Geometry Genius</span>
           </h1>
         </div>
         <div class="flex-none">
@@ -112,29 +112,157 @@
           <!-- Third card -->
           <div class="card w-70 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="./images/triangle.png" alt="" class="rounded-xl" />
+              <img src="./images/parallelogram.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Rectangle</h2>
-              <p>Area (A) = w*I</p>
-
-              <p class="">heoolo</p>
+              <h2 class="card-title">parallelogram</h2>
+              <p>Area (A) =b*h</p>
+              <p class="flex justify-center items-center">
+                <!-- base -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
+                  placeholder="b"
+                  id="rectangle-width"
+                />
+                <span class="mr-7">cm</span>
+                <!-- height -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
+                  placeholder="h"
+                  id="rectangle-length"
+                />
+                <span>cm</span>
+              </p>
+              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
-                <button class="btn btn-primary">Calculate</button>
+                <button
+                  class="btn btn-primary"
+                  onclick="rectangleAreaCalculate()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
           <!-- forth card -->
           <div class="card w-70 bg-base-100 shadow-xl">
             <figure class="px-10 pt-10">
-              <img src="./images/triangle.png" alt="" class="rounded-xl" />
+              <img src="./images/rhombus.png" alt="" class="" />
             </figure>
             <div class="card-body items-center text-center">
-              <h2 class="card-title">Name</h2>
-              <p>Fomula</p>
-              <p>Height and body cm</p>
+              <h2 class="card-title">Rhombus</h2>
+              <p>Area (A) =0.5*d<sub>1</sub>*d<sub>2</sub></p>
+              <p class="flex justify-center items-center">
+                <!-- base -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
+                  placeholder="w"
+                  id="rectangle-width"
+                />
+                <span class="mr-7">cm</span>
+                <!-- height -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
+                  placeholder="l"
+                  id="rectangle-length"
+                />
+                <span>cm</span>
+              </p>
+              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
-                <button class="btn btn-primary">Calculate</button>
+                <button
+                  class="btn btn-primary"
+                  onclick="rectangleAreaCalculate()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- fifth card -->
+          <div class="card w-70 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/pentagon.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Pentagon</h2>
+              <p>Area (A) =0.5*p*b</p>
+              <p class="flex justify-center items-center">
+                <!-- base -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
+                  placeholder="w"
+                  id="rectangle-width"
+                />
+                <span class="mr-7">cm</span>
+                <!-- height -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
+                  placeholder="l"
+                  id="rectangle-length"
+                />
+                <span>cm</span>
+              </p>
+              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="rectangleAreaCalculate()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- sixth card -->
+          <div class="card w-70 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/ellipse.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Ellipse</h2>
+              <p>Area (A) =3.1416*ab</p>
+              <p class="flex justify-center items-center">
+                <!-- base -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
+                  placeholder="w"
+                  id="rectangle-width"
+                />
+                <span class="mr-7">cm</span>
+                <!-- height -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
+                  placeholder="l"
+                  id="rectangle-length"
+                />
+                <span>cm</span>
+              </p>
+              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="rectangleAreaCalculate()"
+                >
+                  Calculate
+                </button>
               </div>
             </div>
           </div>
