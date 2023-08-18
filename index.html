@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GEOMETRY GENIUS</title>
+    <!-- Tailwind and daisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="">
+    <header>
+      <div class="navbar bg-emerald-400">
+        <div class="flex-1">
+          <h1 class="text-center normal-case text-xl">
+            Interactive <br />
+            Geometry Genius
+          </h1>
+        </div>
+        <div class="flex-none">
+          <button class="btn btn-square btn-ghost">Blog</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Main container -->
+      <div class="flex flex-col lg:flex-row">
+        <div
+          class="flex-1 mr-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
+        >
+          <!-- Shape container -->
+          <!-- First card -->
+          <div class="card w-70 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Triangle</h2>
+              <p>Area (A) =0.5*b*h</p>
+              <p class="flex justify-center items-center">
+                <!-- base -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
+                  placeholder="b"
+                  id="triangle-base"
+                />
+                <span class="mr-7">cm</span>
+                <!-- height -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
+                  placeholder="h"
+                  id="triangle-height"
+                />
+                <span>cm</span>
+              </p>
+              <p>Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
+              <div class="card-actions">
+                <button class="btn btn-primary" onclick="areaCalculate()">
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- second card -->
+          <div class="card w-70 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/rectangle.png" alt="" class="" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area (A) =W*L</p>
+              <p class="flex justify-center items-center">
+                <!-- base -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
+                  placeholder="w"
+                  id="rectangle-width"
+                />
+                <span class="mr-7">cm</span>
+                <!-- height -->
+                <input
+                  type="text"
+                  name=""
+                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
+                  placeholder="l"
+                  id="rectangle-length"
+                />
+                <span>cm</span>
+              </p>
+              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+              <div class="card-actions">
+                <button
+                  class="btn btn-primary"
+                  onclick="rectangleAreaCalculate()"
+                >
+                  Calculate
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Third card -->
+          <div class="card w-70 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Rectangle</h2>
+              <p>Area (A) = w*I</p>
+
+              <p class="">heoolo</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+          <!-- forth card -->
+          <div class="card w-70 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="./images/triangle.png" alt="" class="rounded-xl" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title">Name</h2>
+              <p>Fomula</p>
+              <p>Height and body cm</p>
+              <div class="card-actions">
+                <button class="btn btn-primary">Calculate</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-[400px]">
+          <!-- Area calculation -->
+          <h2 class="text-3xl">Area calculation</h2>
+        </div>
+      </div>
+    </main>
+    <!-- js file -->
+    <script src="js/area-calulation.js"></script>
+  </body>
+</html>
