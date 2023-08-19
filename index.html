@@ -64,7 +64,10 @@
               </p>
               <p>Area: <span id="triangle-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
-                <button class="btn btn-primary" onclick="areaCalculate()">
+                <button
+                  class="btn btn-primary"
+                  onclick="triangleAreaCalculate()"
+                >
                   Calculate
                 </button>
               </div>
@@ -124,7 +127,7 @@
                   name=""
                   class="border-3 w-10 mr-2 p-1 bg-slate-200"
                   placeholder="b"
-                  id="rectangle-width"
+                  id="parallelogram-base"
                 />
                 <span class="mr-7">cm</span>
                 <!-- height -->
@@ -133,15 +136,15 @@
                   name=""
                   class="border-3 mr-2 p-1 bg-slate-200 w-10"
                   placeholder="h"
-                  id="rectangle-length"
+                  id="parallelogram-height"
                 />
                 <span>cm</span>
               </p>
-              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+              <p>Area: <span id="parallelogram-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
                 <button
                   class="btn btn-primary"
-                  onclick="rectangleAreaCalculate()"
+                  onclick="parallelogramAreaCalculate()"
                 >
                   Calculate
                 </button>
@@ -156,31 +159,15 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">Rhombus</h2>
               <p>Area (A) =0.5*d<sub>1</sub>*d<sub>2</sub></p>
-              <p class="flex justify-center items-center">
-                <!-- base -->
-                <input
-                  type="text"
-                  name=""
-                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
-                  placeholder="w"
-                  id="rectangle-width"
-                />
-                <span class="mr-7">cm</span>
-                <!-- height -->
-                <input
-                  type="text"
-                  name=""
-                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
-                  placeholder="l"
-                  id="rectangle-length"
-                />
-                <span>cm</span>
-              </p>
-              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+
+              <p>d<sub>1</sub>=<span id="rhombus-d1">16</span> cm</p>
+              <p>d<sub>2</sub>=<span id="rhombus-d2">8</span> cm</p>
+
+              <p>Area: <span id="rhombus-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
                 <button
                   class="btn btn-primary"
-                  onclick="rectangleAreaCalculate()"
+                  onclick="rhombusAreaCalculate()"
                 >
                   Calculate
                 </button>
@@ -195,31 +182,13 @@
             <div class="card-body items-center text-center">
               <h2 class="card-title">Pentagon</h2>
               <p>Area (A) =0.5*p*b</p>
-              <p class="flex justify-center items-center">
-                <!-- base -->
-                <input
-                  type="text"
-                  name=""
-                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
-                  placeholder="w"
-                  id="rectangle-width"
-                />
-                <span class="mr-7">cm</span>
-                <!-- height -->
-                <input
-                  type="text"
-                  name=""
-                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
-                  placeholder="l"
-                  id="rectangle-length"
-                />
-                <span>cm</span>
-              </p>
-              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+              <p>p= <span id="p">6</span> cm</p>
+              <p>b= <span id="b">10</span> cm</p>
+              <p>Area: <span id="pentagon-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
                 <button
                   class="btn btn-primary"
-                  onclick="rectangleAreaCalculate()"
+                  onclick="pentagonAreaCalculate()"
                 >
                   Calculate
                 </button>
@@ -234,32 +203,14 @@
             </figure>
             <div class="card-body items-center text-center">
               <h2 class="card-title">Ellipse</h2>
-              <p>Area (A) =3.1416*ab</p>
-              <p class="flex justify-center items-center">
-                <!-- base -->
-                <input
-                  type="text"
-                  name=""
-                  class="border-3 w-10 mr-2 p-1 bg-slate-200"
-                  placeholder="w"
-                  id="rectangle-width"
-                />
-                <span class="mr-7">cm</span>
-                <!-- height -->
-                <input
-                  type="text"
-                  name=""
-                  class="border-3 mr-2 p-1 bg-slate-200 w-10"
-                  placeholder="l"
-                  id="rectangle-length"
-                />
-                <span>cm</span>
-              </p>
-              <p>Area: <span id="rectangle-area">0</span> cm<sup>2</sup></p>
+              <p>Area (A) =π*a*b</p>
+              <p>p= <span id="p">10</span> cm</p>
+              <p>b= <span id="b">4</span> cm</p>
+              <p>Area: <span id="ellipse-area">0</span> cm<sup>2</sup></p>
               <div class="card-actions">
                 <button
                   class="btn btn-primary"
-                  onclick="rectangleAreaCalculate()"
+                  onclick="ellipseAreaCalculate()"
                 >
                   Calculate
                 </button>
@@ -274,6 +225,7 @@
       </div>
     </main>
     <!-- js file -->
+    <script src="js/utilities.js"></script>
     <script src="js/area-calulation.js"></script>
   </body>
 </html>

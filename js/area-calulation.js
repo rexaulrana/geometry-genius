@@ -1,29 +1,53 @@
-function areaCalculate() {
-  // base
-  const triangleBaseText = document.getElementById("triangle-base").value;
-  const triangleBase = parseFloat(triangleBaseText);
-
-  //   height
-  const triangleHeightText = document.getElementById("triangle-height").value;
-  const triangleHight = parseFloat(triangleHeightText);
-  const total = 0.5 * triangleBase * triangleHight;
-  const triangleArea = (document.getElementById("triangle-area").innerText =
-    total);
-  console.log(triangleBase, triangleHight);
+// triangle area
+function triangleAreaCalculate() {
+  const base = inputValueById("triangle-base");
+  const height = inputValueById("triangle-height");
+  const area = 0.5 * base * height;
+  const areaCalculate = area.toFixed(2);
+  setElementValue("triangle-area", areaCalculate);
 }
 
 // rectangle area
 function rectangleAreaCalculate() {
-  // width
-  const rectangleWidthText = document.getElementById("rectangle-width").value;
-  const rectangleWidth = parseFloat(rectangleWidthText);
+  const width = inputValueById("rectangle-width");
+  const length = inputValueById("rectangle-length");
+  const area = width * length;
+  setElementValue("rectangle-area", area);
+}
 
-  //   length
-  const rectangleLengthText = document.getElementById("rectangle-length").value;
-  const rectangleLength = parseFloat(rectangleLengthText);
-  const total = rectangleLength * rectangleWidth;
+// parallelogram area
 
-  //   area
-  const rectangleArea = (document.getElementById("rectangle-area").innerText =
-    total);
+function parallelogramAreaCalculate() {
+  const base = inputValueById("parallelogram-base");
+  const height = inputValueById("parallelogram-height");
+  const area = base * height;
+  setElementValue("parallelogram-area", area);
+  // console.log(setElementValue());
+  // console.log(base, height);
+}
+
+// rhombus area
+function rhombusAreaCalculate() {
+  const d1 = getElementValueById("rhombus-d1");
+  const d2 = getElementValueById("rhombus-d2");
+  const area = 0.5 * d1 * d2;
+  const setArea = setElementValue("rhombus-area", area);
+}
+
+// pentagon area
+
+function pentagonAreaCalculate() {
+  const p = getElementValueById("p");
+  const b = getElementValueById("b");
+  const area = 0.5 * p * b;
+  const setArea = setElementValue("pentagon-area", area);
+}
+
+// ellipse area
+function ellipseAreaCalculate() {
+  const p = getElementValueById("p");
+  const b = getElementValueById("b");
+  const area = 3.1416 * p * b;
+  const areaCalculate = area.toFixed(2);
+  setElementValue("ellipse-area", areaCalculate);
 }
